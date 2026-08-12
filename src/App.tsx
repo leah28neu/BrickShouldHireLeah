@@ -63,10 +63,10 @@ const PROJECTS = [
 ]
 
 const PERSONAL = [
-  "I'm a Milwaukee/Wisconsin native living in Chicago. My badger alumni family would be extra proud of me if I worked for fellow UW Madison grads.",
-  "I'm trying to return to my middle school self who read books and went outside to entertain herself.",
-  "My favorite part of the day is my run, it's the one hour I'm not looking at a screen.",
-  "I'm excited to contribute to an exciting, young work culture in Chicago. I bring bright ideas, a fresh perspective, and firsthand experience as a Gen Zer actively trying to get off her phone.",
+  "I'm excited to contribute to an innovative, young work culture in Chicago (where I already live!). I bring bright ideas, a fresh perspective, and firsthand experience as a Gen Zer who understands the current digital landscape.",
+  "I own a Brick! My dad (UW Madison grad) bought each person in my family a Brick because he believes in the mission so strongly!",
+  "I'm trying to return to my middle school self who read books and went outside to entertain herself, and didn't own a phone or even watch tv. My favorite part of the day is my run because it's the one hour I'm not looking at a screen and am left alone with my thoughts.",
+  "I have explored and tried imposing other digital restrictions upon myself, like using screen time, deleting social media apps altogether, and challenging myself to stop using headphones on my commute to work on the train.",
 ]
 
 export default function App() {
@@ -144,7 +144,7 @@ export default function App() {
               fontSize: 'clamp(15px, 1.8vw, 20px)', color: SAND_DIM,
               margin: '0 0 20px', fontStyle: 'italic',
             }}>
-              As a fellow Wisconsin native, 26 year old living in Chicago
+              As a fellow Wisconsin native and 26 year old living in Chicago
             </p>
 
             {/* intro */}
@@ -194,12 +194,12 @@ export default function App() {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
           <p style={{ fontSize: 15, lineHeight: 1.85, color: SAND, fontWeight: 300, margin: 0 }}>
-            While much of the tech industry has spent years optimizing products for engagement, I've spent much of my education thinking about the opposite —{' '}
-            <strong style={{ color: WHITE, fontWeight: 500 }}>how technology can respect people's attention</strong> instead of competing for it.
+            While most of the tech industry has spent years designing products for the highest engagement, I spent much of my education thinking about the opposite. How can we design technology to{' '}
+            <strong style={{ color: WHITE, fontWeight: 500 }}>respect people's attention</strong> instead of competing for it? How can we build products that improve people's lives while also balancing business needs and being financially successful?
           </p>
           <p style={{ fontSize: 15, lineHeight: 1.85, color: SAND, fontWeight: 300, margin: 0 }}>
             At Purdue, I studied technology addiction, persuasive design, dark patterns, ethical UX, and digital wellbeing. One of my favorite projects challenged us to design technology that actually encouraged people to{' '}
-            <strong style={{ color: WHITE, fontWeight: 500 }}>put their phones down</strong>, not pick them up. At IBM, I found myself designing for AI — which felt like contributing to people getting lazier and relying on technology more (even though I focused on AI ethics).
+            <strong style={{ color: WHITE, fontWeight: 500 }}>put their phones down</strong>, not pick them up. At IBM, I found myself designing for AI, where I felt the tension between trying to advocate for AI ethics while designing a technology that contributed to people getting lazier and relying on technology more.
           </p>
           <div style={{
             background: 'rgba(22,84,254,0.08)', border: `1px solid rgba(22,84,254,0.2)`,
@@ -417,7 +417,7 @@ export default function App() {
           fontSize: 'clamp(52px, 10vw, 130px)', lineHeight: 0.9,
           letterSpacing: '-0.02em', color: WHITE, margin: '0 0 40px',
         }}>
-          LET'S<br /><span style={{ color: BLUE }}>CHAT.</span>
+          LET'S <span style={{ color: BLUE }}>CHAT.</span>
         </h2>
 
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 56 }}>
