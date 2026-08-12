@@ -420,7 +420,7 @@ export default function App() {
           LET'S <span style={{ color: BLUE }}>CHAT.</span>
         </h2>
 
-        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 56 }}>
+        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 12 }}>
           <a
             href="https://leahneustedter.com"
             target="_blank"
@@ -442,6 +442,13 @@ export default function App() {
             linkedin.com/in/leahneustedter
           </div>
         </div>
+
+        <p style={{
+          fontFamily: 'var(--font-mono)', fontSize: 12, color: SAND_DIM,
+          letterSpacing: '0.02em', margin: '0 0 56px',
+        }}>
+          Password for IBM page is "leahux"
+        </p>
 
         <div style={{
           borderTop: `1px solid rgba(208,204,203,0.1)`, paddingTop: 20,
