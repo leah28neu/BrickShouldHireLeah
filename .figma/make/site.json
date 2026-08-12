@@ -4,5 +4,8 @@
   "language": "en",
   "robots": {
     "index": true
+  },
+  "analytics": {
+    "googleAnalyticsId": "G-LG7PTDKC3C"
   }
 }
