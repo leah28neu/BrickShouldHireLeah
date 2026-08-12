@@ -149,8 +149,8 @@ export default function App() {
 
             {/* intro */}
             <p style={{ fontSize: 16, lineHeight: 1.8, color: SAND, fontWeight: 300, margin: 0 }}>
-              No, I didn't go to UW Madison (but my whole family did) — instead I went to Purdue because they had one of the best UX Design programs in the country{' '}
-              <em style={{ color: SAND_DIM }}>(sorry)</em>. And here is why you should hire me as a Product Designer.
+              No, I didn't go to UW Madison — I went to Purdue because they had one of the best UX Design programs in the country{' '}
+              <em style={{ color: SAND_DIM }}>(sorry)</em>. If you can get past that, then here is why you should definitely hire me as a Product Designer.
             </p>
           </div>
 
