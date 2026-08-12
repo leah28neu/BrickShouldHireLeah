@@ -37,12 +37,12 @@ const FIT_CARDS = [
 
 const PROJECTS = [
   {
-    label: 'Microsoft Care Team',
-    company: 'Microsoft',
-    body: 'Designed a caregiver platform focused on reducing isolation, creating shared experiences, and supporting better health outcomes for caregivers and families.',
-    img: microsoftImg,
-    alt: 'Microsoft Care Team app screens showing family sharing and caregiver features',
-    tag: 'Healthcare UX',
+    label: 'Technology Addiction',
+    company: 'Purdue University',
+    body: "Designed mobile concepts that intentionally reduced screen time when studying or winding down before bed — using friction instead of engagement to \"force\" users to put their phones down. Would love to walk through this project with you as it was a class project and not on my portfolio.",
+    img: purdueImg,
+    alt: 'Phone mockups showing Deep Work Mode and anti-addiction app concepts',
+    tag: 'Anti-Phone Design',
   },
   {
     label: 'Garmin Coaching',
@@ -53,12 +53,12 @@ const PROJECTS = [
     tag: 'Health + Wearables',
   },
   {
-    label: 'Technology Addiction',
-    company: 'Purdue University',
-    body: "Designed mobile concepts that intentionally reduced screen time when studying or winding down before bed — using friction instead of engagement to \"force\" users to put their phones down. Would love to walk through this project with you as it was a class project and not on my portfolio.",
-    img: purdueImg,
-    alt: 'Phone mockups showing Deep Work Mode and anti-addiction app concepts',
-    tag: 'Anti-Phone Design',
+    label: 'Microsoft Care Team',
+    company: 'Microsoft',
+    body: 'Designed a caregiver platform focused on reducing isolation, creating shared experiences, and supporting better health outcomes for caregivers and families.',
+    img: microsoftImg,
+    alt: 'Microsoft Care Team app screens showing family sharing and caregiver features',
+    tag: 'Healthcare UX',
   },
 ]
 
