@@ -79,7 +79,7 @@ const PERSONAL_ALT = [
 
 export default function App() {
   const [activeCard, setActiveCard] = useState<number | null>(null)
-  const isAlt = typeof window !== 'undefined' && window.location.hash === '#v2'
+  const isAlt = typeof window !== 'undefined' && window.location.hash === '#WhyBrickShouldHireLeahDesign'
   const personalItems = isAlt ? PERSONAL_ALT : PERSONAL
 
   return (
