@@ -69,8 +69,18 @@ const PERSONAL = [
   "I have explored and tried imposing other digital restrictions upon myself, like using screen time, deleting social media apps altogether, and challenging myself to stop using headphones on my commute to work on the train.",
 ]
 
+const PERSONAL_ALT = [
+  "I own a Brick! My dad (UW Madison grad) bought each person in my family a Brick because he believes in the mission so strongly!",
+  "I'm trying to return to my middle school self who read books and went outside to entertain herself, and didn't own a phone or even watch tv. My favorite part of the day is my run because it's the one hour I'm not looking at a screen and am left alone with my thoughts.",
+  "I'm excited by the idea of returning to an in-house product-focused design team where I could have immediate, direct impact, working with a talented team led by someone with your track record of growing products from the ground up.",
+  "I have explored and tried imposing other digital restrictions upon myself, like using screen time, deleting social media apps altogether, and challenging myself to stop using headphones on my commute to work on the train.",
+  "I'm excited to contribute to an innovative, young work culture in Chicago (where I am already based). I bring bright ideas, a fresh perspective, and firsthand experience as a Gen Zer who understands the current digital landscape.",
+]
+
 export default function App() {
   const [activeCard, setActiveCard] = useState<number | null>(null)
+  const isAlt = typeof window !== 'undefined' && window.location.hash === '#WhyBrickShouldHireLeahDesign'
+  const personalItems = isAlt ? PERSONAL_ALT : PERSONAL
 
   return (
     <div style={{ fontFamily: 'var(--font-body)', backgroundColor: BG, color: SAND, minHeight: '100vh' }}>
@@ -139,18 +149,26 @@ export default function App() {
             </h1>
 
             {/* subheader */}
-            <p style={{
-              fontFamily: 'var(--font-body)', fontWeight: 400,
-              fontSize: 'clamp(15px, 1.8vw, 20px)', color: SAND_DIM,
-              margin: '0 0 20px', fontStyle: 'italic',
-            }}>
-              As a fellow Wisconsin native and 26 year old living in Chicago
-            </p>
+            {!isAlt && (
+              <p style={{
+                fontFamily: 'var(--font-body)', fontWeight: 400,
+                fontSize: 'clamp(15px, 1.8vw, 20px)', color: SAND_DIM,
+                margin: '0 0 20px', fontStyle: 'italic',
+              }}>
+                As a fellow Wisconsin native and 26 year old living in Chicago
+              </p>
+            )}
 
             {/* intro */}
             <p style={{ fontSize: 16, lineHeight: 1.8, color: SAND, fontWeight: 300, margin: 0 }}>
-              No, I didn't go to UW Madison — I went to Purdue because they had one of the best UX Design programs in the country{' '}
-              <em style={{ color: SAND_DIM }}>(sorry)</em>. If you can get past that, then here is why you should definitely hire me as a Product Designer.
+              {isAlt ? (
+                "I'm a Chicago-based Product Designer with a B.S. in UX Design and a background spanning wellbeing and wearables, enterprise AI, and big tech."
+              ) : (
+                <>
+                  No, I didn't go to UW Madison — I went to Purdue because they had one of the best UX Design programs in the country{' '}
+                  <em style={{ color: SAND_DIM }}>(sorry)</em>. If you can get past that, then here is why you should definitely hire me as a Product Designer.
+                </>
+              )}
             </p>
           </div>
 
@@ -366,7 +384,7 @@ export default function App() {
           </h2>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          {PERSONAL.map((item, i) => (
+          {personalItems.map((item, i) => (
             <div key={i} style={{
               display: 'flex', gap: 16, alignItems: 'flex-start',
               background: BG_CARD, borderRadius: 14, padding: '16px 20px',
@@ -398,7 +416,9 @@ export default function App() {
             — Jared Spool
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.8, color: SAND_DIM, fontWeight: 300, maxWidth: 480, margin: '0 auto' }}>
-            I believe well-designed technology helps users accomplish their needs — and then gets out of the way.
+            {isAlt
+              ? 'I believe well-designed technology helps users accomplish their needs and then gets out of the way.'
+              : 'I believe well-designed technology helps users accomplish their needs — and then gets out of the way.'}
           </p>
         </div>
       </section>
