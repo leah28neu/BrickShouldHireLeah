@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import headshotImg from './imports/newheadshotletsgo.png'
 import microsoftImg from './imports/Microsoft.png'
 import garminImg from './imports/Screenshot_2026-08-12_at_12.26.53_PM.png'
@@ -79,7 +79,15 @@ const PERSONAL_ALT = [
 
 export default function App() {
   const [activeCard, setActiveCard] = useState<number | null>(null)
-  const isAlt = typeof window !== 'undefined' && window.location.hash === '#Design'
+  const [hash, setHash] = useState(() => (typeof window !== 'undefined' ? window.location.hash : ''))
+
+  useEffect(() => {
+    const onHashChange = () => setHash(window.location.hash)
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
+  const isAlt = hash === '#Design'
   const personalItems = isAlt ? PERSONAL_ALT : PERSONAL
 
   return (
