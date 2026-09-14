@@ -90,6 +90,18 @@ export default function App() {
   const isAlt = hash === '#Design'
   const personalItems = isAlt ? PERSONAL_ALT : PERSONAL
 
+  useEffect(() => {
+    if (!isAlt) return
+    const gtag = (window as any).gtag
+    if (typeof gtag === 'function') {
+      gtag('event', 'page_view', {
+        page_location: window.location.href,
+        page_path: window.location.pathname + window.location.hash,
+        page_title: 'Why Brick Should Hire Me — Design',
+      })
+    }
+  }, [isAlt])
+
   return (
     <div style={{ fontFamily: 'var(--font-body)', backgroundColor: BG, color: SAND, minHeight: '100vh' }}>
 
