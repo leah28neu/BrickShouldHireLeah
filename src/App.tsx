@@ -70,10 +70,10 @@ const PERSONAL = [
 ]
 
 const PERSONAL_ALT = [
-  "I own a Brick! My dad (UW Madison grad) bought each person in my family a Brick because he believes in the mission so strongly!",
+  "I own a Brick, my dad bought each person in my family one because he believes in the mission so strongly",
   "I'm trying to return to my middle school self who read books and went outside to entertain herself, and didn't own a phone or even watch tv. My favorite part of the day is my run because it's the one hour I'm not looking at a screen and am left alone with my thoughts.",
-  "I'm excited by the idea of returning to an in-house product-focused design team where I could have immediate, direct impact, working with a talented team led by someone with your track record of growing products from the ground up.",
   "I have explored and tried imposing other digital restrictions upon myself, like using screen time, deleting social media apps altogether, and challenging myself to stop using headphones on my commute to work on the train.",
+  "I'm excited by the idea of returning to an in-house product-focused design team where I could have immediate, direct impact, working with a talented team led by someone with your track record of growing products from the ground up.",
   "I'm excited to contribute to an innovative, young work culture in Chicago (where I am already based). I bring bright ideas, a fresh perspective, and firsthand experience as a Gen Zer who understands the current digital landscape.",
 ]
 
